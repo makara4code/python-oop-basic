@@ -3,6 +3,7 @@
 ## 📋 Overview
 
 Create a JX game character management system that demonstrates all four OOP concepts:
+
 - Classes and Objects
 - Inheritance
 - Encapsulation
@@ -17,6 +18,7 @@ Create a JX game character management system that demonstrates all four OOP conc
 Create a `JXCharacter` class with the following requirements:
 
 **Attributes:**
+
 - `name` - Character's name
 - `sect` - Sect name (Shaolin, Wudang, Emei, Tianshan, etc.)
 - `level` - Current level (starts at 1)
@@ -25,6 +27,7 @@ Create a `JXCharacter` class with the following requirements:
 - `experience` - Experience points (starts at 0)
 
 **Methods:**
+
 - `__init__(name, sect)` - Constructor
 - `display_info()` - Display character information
 - `gain_exp(amount)` - Add experience points
@@ -33,6 +36,7 @@ Create a `JXCharacter` class with the following requirements:
 - `heal(amount)` - Restore health (cannot exceed max_health)
 
 **Test your class by:**
+
 - Creating at least 2 different characters
 - Making them gain experience and level up
 - Testing damage and healing
@@ -44,21 +48,25 @@ Create a `JXCharacter` class with the following requirements:
 Create **THREE** sect-specific classes that inherit from `JXCharacter`:
 
 **1. ShaolinWarrior (Shaolin Sect)**
+
 - Additional attribute: `inner_strength` (default: 50)
 - Special skill: `dragon_strike()` - Powerful melee attack
 - Special skill: `iron_body()` - Temporarily increase defense
 
 **2. WudangSwordsman (Wudang Sect)**
+
 - Additional attribute: `sword_mastery` (default: 60)
 - Special skill: `tai_chi_sword()` - Balanced attack
 - Special skill: `cloud_step()` - Dodge ability
 
 **3. EmeiHealer (Emei Sect)**
+
 - Additional attribute: `chi` (default: 100)
 - Special skill: `healing_light()` - Heal self or ally (costs 30 chi)
 - Special skill: `restore_chi()` - Restore chi points
 
 **Requirements:**
+
 - Use `super()` to call parent constructor
 - Each sect must have at least 2 unique methods
 - Demonstrate that inherited methods still work
@@ -70,11 +78,13 @@ Create **THREE** sect-specific classes that inherit from `JXCharacter`:
 Create a `PlayerInventory` class with **private attributes**:
 
 **Private Attributes:**
+
 - `__gold` - Player's gold (starts at 100)
 - `__items` - List of items (starts empty)
 - `__max_capacity` - Maximum items (default: 20)
 
 **Public Methods:**
+
 - `get_gold()` - Return current gold amount
 - `earn_gold(amount)` - Add gold (only positive amounts)
 - `spend_gold(amount)` - Subtract gold (check if enough gold)
@@ -84,6 +94,7 @@ Create a `PlayerInventory` class with **private attributes**:
 - `display_inventory()` - Show all items and gold
 
 **Requirements:**
+
 - Gold and items must be private (use `__` prefix)
 - Validate all inputs (no negative gold, check capacity, etc.)
 - Prevent direct access to private attributes
@@ -96,15 +107,18 @@ Create a `PlayerInventory` class with **private attributes**:
 Create a combat system demonstrating polymorphism:
 
 **Create a base `Skill` class:**
+
 - Method: `use_skill(user_name)` - Returns skill description
 
 **Create at least 4 different skill types:**
+
 1. `MeleeAttack` - Physical damage skill
 2. `RangedAttack` - Distance attack skill
 3. `HealingSkill` - Restoration skill
 4. `BuffSkill` - Enhancement skill
 
 **Requirements:**
+
 - All skills inherit from `Skill` class
 - Each skill has different implementation of `use_skill()`
 - Create a list of different skills
@@ -112,6 +126,7 @@ Create a combat system demonstrating polymorphism:
 - Each skill should return different output
 
 **Example:**
+
 ```python
 skills = [MeleeAttack(), RangedAttack(), HealingSkill(), BuffSkill()]
 for skill in skills:
@@ -123,14 +138,18 @@ for skill in skills:
 ## 🎁 Bonus Challenges (Extra 20 points)
 
 ### Bonus 1: Party System (10 points)
+
 Create a `Party` class that can:
+
 - Add up to 5 characters
 - Display all party members
 - Calculate total party level
 - Heal all party members
 
 ### Bonus 2: Boss Battle (10 points)
+
 Create a `Boss` class with:
+
 - Much higher health than normal characters
 - Special attack that damages all party members
 - Loot system (drops items when defeated)
@@ -147,6 +166,7 @@ Create a `Boss` class with:
 4. **README** explaining how to run your program
 
 **File naming:**
+
 - `homework_yourname.py` (or split into multiple files)
 - Include your name in comments at the top
 
@@ -180,7 +200,7 @@ Create a `Boss` class with:
 
 ## 📅 Due Date
 
-**[Instructor: Fill in due date]**
+**Saturday, 11:59 PM**
 
 ---
 
@@ -231,4 +251,3 @@ Polymorphism Demo...
 ---
 
 **Good luck! Remember: Practice makes perfect! 加油！(Jiā yóu!)**
-
